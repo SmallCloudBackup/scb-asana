@@ -1,0 +1,10 @@
+{
+  "name": "scb-asana",
+  "description": "SmallCloudBackup interface to Asana project management",
+  "version": "0.0.1",
+  "repository": "SmallCloudBackup/scb-asana",
+  "dependencies": {
+    "asana": "*",
+    "scb-core": "git+https://github.com/SmallCloudBackup/scb-core"
+  }
+}
