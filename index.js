@@ -7,12 +7,13 @@
 var scbModule = {
   "sources": {
     "asana": {
-      "module": require("lib/source.js")
+      "module": require("./lib/source")
     }
   },
   "service": {
     "asana": {
-      "module": require("lib/service.js")
+      "module": require("./lib/service"),
+      "config": require("./lib/service-config")
     }
   }
 };
