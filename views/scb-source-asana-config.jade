@@ -1,0 +1,24 @@
+extends ../../../views/scb-source
+
+mixin sourceTitle
+  title Small Cloud Backup - Asana Source configuration
+
+block sourceConfig
+  div#sourceContainer
+
+block sourceBottomJs
+  script#sourceTemplate(type="text/x-handlebars-template")
+    | <div id='{{_id}}' class='panel panel-default'>
+    |   <div class="panel-heading"><h3 class="panel-title">{{name}}</h3></div>
+    |   <div class="panel-body">
+    |     <table class="table">
+    |       <tr><td>Type:</td><td>{{type}}</td></tr>
+    |       <tr><td>Connection string:</td><td>{{connectionString}}</td></tr>
+    |     </table>
+    |   </div>
+    |   <div class="panel-footer">
+    |     <button class='btn btn-warning btn-xs' id="delService{{_id}}"><span class='glyphicon glyphicon-trash'></span></button>
+    |     <button class='btn btn-primary btn-xs' id="editService{{_id}}"><span class='glyphicon glyphicon-edit'></span></button>
+    |   </div>
+    | </div>
+    |</div>

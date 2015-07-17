@@ -1,4 +1,10 @@
 extends ../../../views/scb-service
 
+mixin serviceTitle
+  title Small Cloud Backup - Asana service configuration
+
 block serviceConfig
   | bla-bla-bla
+
+block serviceBottomJs
+  script(src="/scb-asana/service.js")
